@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Crystals Collector Game</title>
+        <!-- link jQuesy -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <!-- link style.cs -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- link favicon -->
+        <link rel="icon" href="./assets/images/favicon.ico">
+    </head>
+    <body>
+                    <!-- 
+                <p id="randomResult"></p>
+
+                <div class="crystals">
+
+                </div> -->
+            <!-- header and instruction -->
+            <div class="jumbotron text-center">
+                <h1 class="display-4">Hello, world!</h1>
+                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                <!-- <hr class="my-4"> -->
+                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+            </div>
+              <!--  -->
+
+              <!-- random number, wins, losses -->
+
+            <div class="container">
+                    <!-- <div class="row justify-content-start">
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                    </div> -->
+                    <!-- <div class="row justify-content-center">
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                    </div> -->
+                    <!-- <div class="row justify-content-end">
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                    </div> -->
+                    <!-- <div class="row justify-content-around">
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                      <div class="col-4">
+                        One of two columns
+                      </div>
+                    </div> -->
+                    <div class="row justify-content-between ">
+                      <div class="col-4 bg-light text-center">
+                            <h2>score random number: <span id="randomNUmber"></span></h2>
+                      </div>
+                      <div class="col-4 bg-light">
+                            <h3><span class="popmessage"></span></h3>
+                            <h3>Wins: <span id="wins"></span></h3>
+                            <h3>Losses: <span id="losses"></span></h3>
+                      </div>
+                    </div>
+                    <!--  -->
+               
+                  
+                    <br>
+                    <br>
+                    <!-- Crystal image -->
+                    <div class="row ">
+
+                        <div class="col-sm-3">
+                                <img src="./assets/images/green.jpg" class="rounded float-left border green" alt="green Crystal" width="255" height="255">
+                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
+                        </div>
+                        
+
+                        <div class="col-sm-3">
+                                <img src="./assets/images/pink.jpg" class="rounded float-left border  pink" alt="pink Crystal" width="255" height="255">
+                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
+                        </div>
+
+                        <div class="col-sm-3">
+                                <img src="./assets/images/yello.jpg" class="rounded float-left border yello" alt="yello Crystal" width="255" height="255">
+                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
+                        </div>
+
+                        <div class="col-sm-3">
+                                <img src="./assets/images/heart.jpg" class="rounded float-left border heart" alt="heart Crystal" width="255" height="255">
+                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
+                        </div>
+                    
+                    </div>
+                    <br>
+                    <br>
+                    <!--  -->
+
+                        <!-- total score -->
+                        <div class="row">
+                            <div class="col-4 bg-light">
+                            <h2>Your Total Score:</h2> 
+                        </div>
+                    </div>
+                    <br>
+                        <div class="row">
+                                <div class="col-4 bg-light">
+                            <h2><span id="totalScore"></span></h2>
+                            </div>
+                        </div>
+                        
+                </div> <!--.container -->
+                  
+           
+        
+                <script type="text/javascript" src="./assets/javascript/game.js"></script>
+    </body>
+</html>
