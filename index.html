@@ -15,118 +15,100 @@
         <link rel="icon" href="./assets/images/favicon.ico">
     </head>
     <body>
-                    <!-- 
-                <p id="randomResult"></p>
+             
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Crystals Collector Game</h1>
 
-                <div class="crystals">
+        <br>
+        <!--  -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary " data-toggle="modal"      data-target="#exampleModalCenter">
+          HOW TO PLAY
+        </button>
 
-                </div> -->
-            <!-- header and instruction -->
-            <div class="jumbotron text-center">
-                <h1 class="display-4">Hello, world!</h1>
-                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                <!-- <hr class="my-4"> -->
-                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header ">
+                <h4 id="color"class="modal-title " id="exampleModalCenterTitle ">Crystals Collector Game Rules</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body text-left">
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of your total score.</p>
+                <p>You win the game by matching your total score to random number, you lose the game if your total score hoes above the random    number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+              </div>
             </div>
-              <!--  -->
+          </div>
+        </div>
+      </div> 
+        <!--  -->
 
-              <!-- random number, wins, losses -->
+        <!-- random number, wins, losses -->
 
-            <div class="container">
-                    <!-- <div class="row justify-content-start">
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                    </div> -->
-                    <!-- <div class="row justify-content-center">
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                    </div> -->
-                    <!-- <div class="row justify-content-end">
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                    </div> -->
-                    <!-- <div class="row justify-content-around">
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                      <div class="col-4">
-                        One of two columns
-                      </div>
-                    </div> -->
-                    <div class="row justify-content-between ">
-                      <div class="col-4 bg-light text-center">
-                            <h2>score random number: <span id="randomNUmber"></span></h2>
-                      </div>
-                      <div class="col-4 bg-light">
-                            <h3><span class="popmessage"></span></h3>
-                            <h3>Wins: <span id="wins"></span></h3>
-                            <h3>Losses: <span id="losses"></span></h3>
-                      </div>
-                    </div>
-                    <!--  -->
-               
-                  
-                    <br>
-                    <br>
-                    <!-- Crystal image -->
-                    <div class="row ">
+      <div class="container">
+        <div class="row justify-content-between ">
+          <div class="col-4  text-center">
+            <h2>score random number: <span id="randomNUmber"></span></h2>
+          </div>
+          <div class="col-4">
+            <h3><span class="popmessage"></span></h3>
+            <h3>Wins: <span id="wins"></span></h3>
+            <h3>Losses: <span id="losses"></span></h3>
+          </div>
+        </div>
 
-                        <div class="col-sm-3">
-                                <img src="./assets/images/green.jpg" class="rounded float-left border green" alt="green Crystal" width="255" height="255">
-                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
-                        </div>
-                        
+        <!--  -->
+        <br>
+        <br>
+        <!-- Crystal image -->
 
-                        <div class="col-sm-3">
-                                <img src="./assets/images/pink.jpg" class="rounded float-left border  pink" alt="pink Crystal" width="255" height="255">
-                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
-                        </div>
+        <div class="row ">
+          <div class="col-sm-3 ">
+            <img src="./assets/images/green.jpg" class="rounded float-left  green" alt="green Crystal" width="255" height="255">
+          </div>
+                      
+          <div class="col-sm-3">
+            <img src="./assets/images/pink.jpg" class="rounded float-left  pink" alt="pink Crystal" width="255" height="255">
+          </div>
 
-                        <div class="col-sm-3">
-                                <img src="./assets/images/yello.jpg" class="rounded float-left border yello" alt="yello Crystal" width="255" height="255">
-                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
-                        </div>
+          <div class="col-sm-3">
+            <img src="./assets/images/yello.jpg" class="rounded float-left  yello" alt="yello Crystal" id="kk" width="255" height="255">
+          </div>
 
-                        <div class="col-sm-3">
-                                <img src="./assets/images/heart.jpg" class="rounded float-left border heart" alt="heart Crystal" width="255" height="255">
-                                <!-- <img src="..." alt="..." class="img-thumbnail"> -->
-                        </div>
-                    
-                    </div>
-                    <br>
-                    <br>
-                    <!--  -->
+          <div class="col-sm-3">
+            <img src="./assets/images/heart.jpg" class="rounded float-left  heart" alt="heart Crystal" width="255" height="255">
+          </div>       
+        </div>
+        <!--  -->
+        <br>
+        <br>
+        <!--  -->
 
-                        <!-- total score -->
-                        <div class="row">
-                            <div class="col-4 bg-light">
-                            <h2>Your Total Score:</h2> 
-                        </div>
-                    </div>
-                    <br>
-                        <div class="row">
-                                <div class="col-4 bg-light">
-                            <h2><span id="totalScore"></span></h2>
-                            </div>
-                        </div>
-                        
-                </div> <!--.container -->
+        <br>
+        <div class="row">
+          <div id="col"class="col-4 ">
+            <h2>Your Total Score: <span id="totalScore"></span></h2> 
+          </div>
+        </div>
+      </div> <!--.container -->
                   
            
         
-                <script type="text/javascript" src="./assets/javascript/game.js"></script>
+      <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+
+      <!--  -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -26,35 +26,27 @@ body{
 
 /* Model- How To Palay */
 
-.modal-body, .modal-header, .modal-footer 
- {
+.modal-body .modal-header {
     background-image: url("../images/download-diamond3.jpg")
 }
-
 
 /* You Won!!! / You Lost!!! - popup message */
 .popmessage{
     color:blue;
 }
 
-/* score random number:, Wins:, Losses:, Your Total Score:  */
-.col-4{
-    /* background-color: #007bff; */
-    background-color: #1133ce8a;
 
+
+
+.col-sm-3{
+    /* background-color: black */
 }
 
-/* score random number:, Wins:, Losses:, Your Total Score:  */
-.h2, h2, .h3, h3  {
-    color: aliceblue;
+.border{
+    /* width: 3px; */
+    color: blue;
 }
 
-/* Model - X button */
-.close{
-color: #007bff;
+#col{
+    width: 500px;
 }
-
-
-
-
-
