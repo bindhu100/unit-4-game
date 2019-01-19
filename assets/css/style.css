@@ -14,7 +14,7 @@ body{
 }
 
 .jumbotron {
-    height: 250px;
+    height: 200px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background-image: url("../images/diamond-background2.jpg");
 }
@@ -29,6 +29,7 @@ body{
 .modal-body, .modal-header, .modal-footer 
  {
     background-image: url("../images/download-diamond3.jpg")
+   
 }
 
 
