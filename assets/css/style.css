@@ -34,9 +34,10 @@ body{
 
 
 /* You Won!!! / You Lost!!! - popup message */
-/* .popmessage{
+.popmessage{
     color:blue;
-} */
+    background-color:rgba(255, 255, 255, 0.418);
+}
 
 /* score random number:, Wins:, Losses:, Your Total Score:  */
 .col-4{
