@@ -1,10 +1,10 @@
 
 $(document).ready(function(){
 
-    // generate random number
+    // generate random number -Random Score Number:
     var random = Math.floor(Math.random() * 101)+19;
 
-    // display random number
+    // display random number -Random Score Number:
     $("#randomNUmber").text(random);
 
     // // generate random value to each crystal
@@ -25,10 +25,10 @@ $(document).ready(function(){
     // restart game
     function reset(){
 
-        // reset random number
+        // reset random number - Random Score Number:
         random = Math.floor(Math.random() * 101)+19;
 
-        // display reset random number
+        // display reset random number -Random Score Number:
         $("#randomNUmber").text(random);
 
         // reset value of each crystal
