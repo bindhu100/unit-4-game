@@ -56,7 +56,7 @@ $(document).ready(function(){
     $(".popmessage").empty();
     }
   
-    setTimeout(fade_out, 4500);
+    setTimeout(fade_out, 4000);
       reset()
     }
 
@@ -71,7 +71,7 @@ $(document).ready(function(){
             $(".popmessage1").empty();
           }
           
-          setTimeout(fade_out, 4500);
+          setTimeout(fade_out, 4000);
         reset()
      }
 

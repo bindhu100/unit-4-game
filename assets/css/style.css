@@ -62,32 +62,10 @@ color: #007bff;
 
 /* Crystals image shadow */
 .dropshadow {
-/* box-shadow: -9px 10px 5px -5px rgba(163,130,130,0.75);
--webkit-box-shadow: -9px 10px 5px -5px rgba(163,130,130,0.75);
--moz-box-shadow: -9px 10px 5px -5px rgba(163,130,130,0.75); */
 
-
-
-/* box-shadow: 19px 20px 27px 4px rgba(0,0,0,0.76);
--webkit-box-shadow: 19px 20px 27px 4px rgba(0,0,0,0.76);
--moz-box-shadow: 19px 20px 27px 4px rgba(0,0,0,0.76); */
-
-/* box-shadow: 19px 20px 27px 4px rgba(8,1,1,0.76);
--webkit-box-shadow: 19px 20px 27px 4px rgba(8,1,1,0.76);
--moz-box-shadow: 19px 20px 27px 4px rgba(8,1,1,0.76); */
-
-/* box-shadow: 19px 20px 27px 7px rgba(8,1,1,0.76);
--webkit-box-shadow: 19px 20px 27px 7px rgba(8,1,1,0.76);
--moz-box-shadow: 19px 20px 27px 7px rgba(8,1,1,0.76); */
-
-/* box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76);
+box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76);
 -webkit-box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76);
--moz-box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76); */
-
-box-shadow: 19px 20px 14px -6px rgba(8,1,1,0.76);
--webkit-box-shadow: 19px 20px 14px -6px rgba(8,1,1,0.76);
--moz-box-shadow: 19px 20px 14px -6px rgba(8,1,1,0.76);
-
+-moz-box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76);
 
 }
 

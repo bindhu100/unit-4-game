@@ -1,123 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title> Crystals Collector Game</title>
-        <!-- link jQuesy -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!-- bootstrap -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-        <!-- link style.cs -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <!-- link favicon -->
-        <link rel="icon" href="./assets/images/favicon1.ico">
-      </head>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title> Crystals Collector Game</title>
+      <!-- link jQuesy -->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+      <!-- link style.cs -->
+      <link rel="stylesheet" href="./assets/css/style.css">
+      <!-- link favicon -->
+      <link rel="icon" href="./assets/images/favicon1.ico">
+    </head>
+
     <body>
                 
-        <div class="jumbotron text-center">
-          <h1 class="display-4">Crystals Collector Game</h1>
+      <div class="jumbotron text-center">
+        <h1 class="display-4">Crystals Collector Game</h1>
 
-          <br>
-          <!--  -->
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary " data-toggle="modal"      data-target="#exampleModalCenter">
-          HOW TO PLAY
-          </button>
+        <br>
+        <!--  -->
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary " data-toggle="modal"      data-target="#exampleModalCenter">
+        HOW TO PLAY
+        </button>
 
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header ">
-                  <h4 id="color"class="modal-title " id="exampleModalCenterTitle ">Crystals Collector Game Rules</h4>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+
+              <div class="modal-header ">
+                <h4 id="color"class="modal-title " id="exampleModalCenterTitle ">Crystals Collector Game Rules</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
                 </div>
+
                 <div class="modal-body text-left">
                   <p>You will be given a random number at the start of a game.</p>
-                  <p>There are four crystals below. By clicking on a crystal, you will add a specific amount to your total score.</p>
-                  <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                  <p>There are four crystals below. By clicking on a crystal, you will add specific amount to your total score.</p>
+                  <p>You win the game by matching your total score to a random score number, you lose the game if your total score goes above the random number.</p>
                   <p>The value of each crystal is hidden from you until you click on it.</p>
-                  <p>Each time when game starts, the game will change the values of each crystal.</p>
+                  <p>Each time when game starts, the values of each crystal wiil change.</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                </div>
+
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
               </div>
+
             </div>
           </div>
-        </div> 
-          <!--  -->
+        </div>
+      </div> 
+        <!--  -->
 
-          <!-- random number, wins, losses -->
+        <!-- random number, wins, losses -->
 
-        <div class="container">
-          <div class="row justify-content-between ">
-            <div class="col-4  text-center">
-                <br>
-              <h2>Random Score Number: <span id="randomNUmber"></span></h2>
+      <div class="container">
+        <div class="row justify-content-between ">
+
+          <div class="col-4  text-center">
+              <br>
+            <h2>Random Score Number: <span id="randomNUmber"></span></h2>
               <!-- <br> -->
-            </div>
-            <div class="col-4 ">
-              <br>
-              <!-- <h2><span class="popmessage"></span></h2> -->
-              <!--  -->
-              <h2> <span class="popmessage"></span><span class="popmessage1"></span></h2>
-              <!--  -->
-              <h3>Wins: <span id="wins"></span></h3>
-              <h3>Losses: <span id="losses"></span></h3>
-              <!-- <br> -->
-            </div>
           </div>
 
-          <!--  -->
-          <br>
-          <br>
-          <!-- Crystal image -->
-
-          <div class="row ">
-            <div class="col-sm-3 ">
-              <img src="./assets/images/green.jpg" class="rounded float-left  green dropshadow" alt="green Crystal" width="255" height="255">
-            </div>
-                          
-            <div class="col-sm-3">
-              <img src="./assets/images/pink.jpg" class="rounded float-left  pink dropshadow" alt="pink Crystal" width="255" height="255">
-            </div>
-
-            <div class="col-sm-3">
-              <img src="./assets/images/yello.jpg" class="rounded float-left  yello dropshadow" alt="yello Crystal" id="kk" width="255" height="255">
-            </div>
-
-            <div class="col-sm-3">
-              <img src="./assets/images/heart.jpg" class="rounded float-left  heart dropshadow" alt="heart Crystal" width="255" height="255">
-            </div>       
+          <div class="col-4 ">
+            <br>
+            <!-- <h2><span class="popmessage"></span></h2> -->
+            <!--  -->
+            <h2> <span class="popmessage"></span><span class="popmessage1"></span></h2>
+            <!--  -->
+            <h3>Wins: <span id="wins"></span></h3>
+            <h3>Losses: <span id="losses"></span></h3>
+            <!-- <br> -->
           </div>
-          <!--  -->
-          <br>
-          <br>
-          <!--  -->
 
-          <br>
-          <div class="row">
-            <div id="col"class="col-4 ">
-              <br>
-              <h2>Your Total Score: <span id="totalScore"></span></h2> 
-              <br>
-            </div>
-          </div>
-        </div> <!--.container -->
-                      
-              
-            
-        <script type="text/javascript" src="./assets/javascript/game.js"></script>
-
+        </div>
 
         <!--  -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <br>
+        <br>
+        <!-- Crystal image -->
+
+        <div class="row ">
+          <div class="col-sm-3 ">
+            <img src="./assets/images/green.jpg" class="rounded float-left  green dropshadow" alt="green Crystal" width="255" height="255">
+          </div>
+                          
+          <div class="col-sm-3">
+            <img src="./assets/images/pink.jpg" class="rounded float-left  pink dropshadow" alt="pink Crystal" width="255" height="255">
+          </div>
+
+          <div class="col-sm-3">
+            <img src="./assets/images/yello.jpg" class="rounded float-left  yello dropshadow" alt="yello Crystal" id="kk" width="255" height="255">
+          </div>
+
+          <div class="col-sm-3">
+            <img src="./assets/images/heart.jpg" class="rounded float-left  heart dropshadow" alt="heart Crystal" width="255" height="255">
+          </div>       
+        </div>
+        <!--  -->
+        <br>
+        <br>
+        <!--  -->
+
+        <br>
+        <div class="row">
+          <div id="col"class="col-4 ">
+            <br>
+            <h2>Your Total Score: <span id="totalScore"></span></h2> 
+            <br>
+          </div>
+        </div>
+      </div> <!--.container -->
+                      
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
+
+    <!--  -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
   </body>
+
 </html>
