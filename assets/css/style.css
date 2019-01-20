@@ -1,8 +1,5 @@
 body{
-    /* background-image: url("../images/shattered.png"); */
-    /* background-image: url("../images/blue.jpg"); */
-    /* background-image: url("../images/diamond-background.jpg"); */
-    /* background-image: url("../images/Sparkle-Diamond.jpg"); */
+
     background-image: url("../images/diamond-background2.jpg");
   
 }
@@ -17,14 +14,15 @@ body{
     height: 200px;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background-image: url("../images/diamond-background2.jpg");
+    
 }
 
-/* header-Crystals Collector Game */
+/* header-"Crystals Collector Game" */
 .display-4 {
     color: blue;
 }
 
-/* Model- How To Palay */
+/* Model- How To Play */
 
 .modal-body, .modal-header, .modal-footer 
  {
@@ -33,9 +31,15 @@ body{
 }
 
 
-/* You Won!!! / You Lost!!! - popup message */
+/* "You Won!!!"- popup message */
 .popmessage{
-    color:blue;
+    color:green;
+    background-color:rgba(255, 255, 255, 0.418);
+}
+
+/* "You Lost!!!" - popup message */
+.popmessage1{
+    color:red;
     background-color:rgba(255, 255, 255, 0.418);
 }
 
@@ -56,7 +60,35 @@ body{
 color: #007bff;
 }
 
+/* Crystals image shadow */
+.dropshadow {
+/* box-shadow: -9px 10px 5px -5px rgba(163,130,130,0.75);
+-webkit-box-shadow: -9px 10px 5px -5px rgba(163,130,130,0.75);
+-moz-box-shadow: -9px 10px 5px -5px rgba(163,130,130,0.75); */
 
 
+
+/* box-shadow: 19px 20px 27px 4px rgba(0,0,0,0.76);
+-webkit-box-shadow: 19px 20px 27px 4px rgba(0,0,0,0.76);
+-moz-box-shadow: 19px 20px 27px 4px rgba(0,0,0,0.76); */
+
+/* box-shadow: 19px 20px 27px 4px rgba(8,1,1,0.76);
+-webkit-box-shadow: 19px 20px 27px 4px rgba(8,1,1,0.76);
+-moz-box-shadow: 19px 20px 27px 4px rgba(8,1,1,0.76); */
+
+/* box-shadow: 19px 20px 27px 7px rgba(8,1,1,0.76);
+-webkit-box-shadow: 19px 20px 27px 7px rgba(8,1,1,0.76);
+-moz-box-shadow: 19px 20px 27px 7px rgba(8,1,1,0.76); */
+
+/* box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76);
+-webkit-box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76);
+-moz-box-shadow: 19px 20px 14px 7px rgba(8,1,1,0.76); */
+
+box-shadow: 19px 20px 14px -6px rgba(8,1,1,0.76);
+-webkit-box-shadow: 19px 20px 14px -6px rgba(8,1,1,0.76);
+-moz-box-shadow: 19px 20px 14px -6px rgba(8,1,1,0.76);
+
+
+}
 
 

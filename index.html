@@ -37,11 +37,11 @@
                   </button>
                 </div>
                 <div class="modal-body text-left">
-                  <p>You will be given a random number at the start of the game.</p>
-                  <p>There are four crystals below. By clicking on a crystal, you will add a specific amount of your total score.</p>
-                  <p>You win the game by matching your total score to random number, you lose the game if your total score hoes above the random    number.</p>
+                  <p>You will be given a random number at the start of a game.</p>
+                  <p>There are four crystals below. By clicking on a crystal, you will add a specific amount to your total score.</p>
+                  <p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
                   <p>The value of each crystal is hidden from you until you click on it.</p>
-                  <p>Each time when the game starts, the game will change the values of each crystal.</p>
+                  <p>Each time when game starts, the game will change the values of each crystal.</p>
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
@@ -57,12 +57,19 @@
         <div class="container">
           <div class="row justify-content-between ">
             <div class="col-4  text-center">
+                <br>
               <h2>score random number: <span id="randomNUmber"></span></h2>
+              <!-- <br> -->
             </div>
             <div class="col-4 ">
-              <h2><span class="popmessage"></span></h2>
+              <br>
+              <!-- <h2><span class="popmessage"></span></h2> -->
+              <!--  -->
+              <h2> <span class="popmessage"></span><span class="popmessage1"></span></h2>
+              <!--  -->
               <h3>Wins: <span id="wins"></span></h3>
               <h3>Losses: <span id="losses"></span></h3>
+              <!-- <br> -->
             </div>
           </div>
 
@@ -73,19 +80,19 @@
 
           <div class="row ">
             <div class="col-sm-3 ">
-              <img src="./assets/images/green.jpg" class="rounded float-left  green" alt="green Crystal" width="255" height="255">
+              <img src="./assets/images/green.jpg" class="rounded float-left  green dropshadow" alt="green Crystal" width="255" height="255">
             </div>
                           
             <div class="col-sm-3">
-              <img src="./assets/images/pink.jpg" class="rounded float-left  pink" alt="pink Crystal" width="255" height="255">
+              <img src="./assets/images/pink.jpg" class="rounded float-left  pink dropshadow" alt="pink Crystal" width="255" height="255">
             </div>
 
             <div class="col-sm-3">
-              <img src="./assets/images/yello.jpg" class="rounded float-left  yello" alt="yello Crystal" id="kk" width="255" height="255">
+              <img src="./assets/images/yello.jpg" class="rounded float-left  yello dropshadow" alt="yello Crystal" id="kk" width="255" height="255">
             </div>
 
             <div class="col-sm-3">
-              <img src="./assets/images/heart.jpg" class="rounded float-left  heart" alt="heart Crystal" width="255" height="255">
+              <img src="./assets/images/heart.jpg" class="rounded float-left  heart dropshadow" alt="heart Crystal" width="255" height="255">
             </div>       
           </div>
           <!--  -->
@@ -96,7 +103,9 @@
           <br>
           <div class="row">
             <div id="col"class="col-4 ">
+              <br>
               <h2>Your Total Score: <span id="totalScore"></span></h2> 
+              <br>
             </div>
           </div>
         </div> <!--.container -->

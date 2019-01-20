@@ -24,6 +24,7 @@ $(document).ready(function(){
 
     // restart game
     function reset(){
+
         // reset random number
         random = Math.floor(Math.random() * 101)+19;
 
@@ -42,11 +43,20 @@ $(document).ready(function(){
 
     }
 
+
     // dispaly how many times wins
     function winner(){
         wins++;
       $("#wins").text(wins);
-      $(".popmessage").text("You Won!!!")
+    $(".popmessage").text("You Won!!!")
+
+
+    // set time out for "You Won!!!" message
+    var fade_out = function() {
+    $(".popmessage").empty();
+    }
+  
+    setTimeout(fade_out, 4500);
       reset()
     }
 
@@ -54,7 +64,14 @@ $(document).ready(function(){
      function loser (){
         losses++;
         $("#losses").text(losses);
-        $(".popmessage").text("You Lost!!!")
+        $(".popmessage1").text("You Lost!!!")
+
+        // set time out for "You Lost!!!" message
+        var fade_out = function() {
+            $(".popmessage1").empty();
+          }
+          
+          setTimeout(fade_out, 4500);
         reset()
      }
 
