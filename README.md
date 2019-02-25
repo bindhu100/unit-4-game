@@ -1,7 +1,7 @@
 # unit-4-game
 jQuery Assignment - CrystalsCollector Game 
 
-#Overview
+<h2>Overview</h2>
 
 In this assignment, create another fun and interactive game for web browsers. This time, app must dynamically update HTML pages with the jQuery library.
 
